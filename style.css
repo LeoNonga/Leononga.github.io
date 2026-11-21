@@ -367,44 +367,31 @@ h2 {
     text-align: center;
     font-size: 0.75rem;
   }
-}
-.stage {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: calc(100vh - 70px);
-}
-
-/* Ayusin ang lapit ng text at picture sa Home */
+/* Ibabalik sa tamang ayos: Text sa kaliwa, Picture sa kanan */
 #home.view.active {
-  display: flex;
-  flex-direction: row-reverse;
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) auto;
   align-items: center;
-  justify-content: center;
-  gap: 64px;
+  gap: 48px;
   max-width: 1000px;
   margin: 0 auto;
   width: 100%;
 }
 
-/* Siguraduhing kita at napipindot ang Back at Next */
-.pager {
-  position: relative;
-  z-index: 50;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 16px;
-  padding: 12px 48px;
-  margin-top: auto;
-  flex-shrink: 0;
+#home .avatar {
+  grid-column: 2;
+  grid-row: 1 / span 4;
+  max-height: 330px;
+  max-width: 290px;
+  overflow: hidden;
 }
 
-.pager .btn {
-  cursor: pointer;
-  pointer-events: auto;
+#home h1,
+#home .tagline,
+#home .hero-actions {
+  grid-column: 1;
 }
+
 
 
 
