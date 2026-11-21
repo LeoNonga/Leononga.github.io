@@ -368,3 +368,20 @@ h2 {
     font-size: 0.75rem;
   }
 }
+.stage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100vh - 70px);
+}
+
+.pager {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+  flex-wrap: nowrap;
+  margin-top: auto;
+  padding: 16px 48px;
+}
