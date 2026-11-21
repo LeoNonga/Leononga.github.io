@@ -423,3 +423,19 @@ h2 {
   object-fit: cover;
   object-position: top;
 }
+.stage {
+  padding-bottom: 24px;
+}
+
+.avatar {
+  max-height: 340px;
+  max-width: 300px;
+  overflow: hidden;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
