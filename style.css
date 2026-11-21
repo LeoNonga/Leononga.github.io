@@ -367,31 +367,41 @@ h2 {
     text-align: center;
     font-size: 0.75rem;
   }
-/* Ibabalik sa tamang ayos: Text sa kaliwa, Picture sa kanan */
+/* Ayusin ang Home layout: text block sa kaliwa, avatar sa kanan */
+body {
+  min-height: 100dvh;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 #home.view.active {
-  display: grid;
-  grid-template-columns: minmax(0, 1.35fr) auto;
-  align-items: center;
-  gap: 48px;
-  max-width: 1000px;
-  margin: 0 auto;
-  width: 100%;
+  display: grid !important;
+  grid-template-columns: minmax(280px, 1.2fr) minmax(240px, 320px) !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 48px !important;
+  max-width: 960px !important;
+  margin: 0 auto !important;
+  padding: 24px 32px !important;
+  width: 100% !important;
 }
 
 #home .avatar {
-  grid-column: 2;
-  grid-row: 1 / span 4;
-  max-height: 330px;
-  max-width: 290px;
-  overflow: hidden;
+  grid-column: 2 !important;
+  grid-row: 1 / span 4 !important;
+  justify-self: center !important;
+  max-height: 330px !important;
+  max-width: 280px !important;
+  overflow: hidden !important;
 }
 
 #home h1,
 #home .tagline,
 #home .hero-actions {
-  grid-column: 1;
+  grid-column: 1 !important;
+  max-width: 100% !important;
 }
-
 
 
 
