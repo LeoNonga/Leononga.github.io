@@ -375,67 +375,38 @@ h2 {
   min-height: calc(100vh - 70px);
 }
 
+/* Ayusin ang lapit ng text at picture sa Home */
+#home.view.active {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Siguraduhing kita at napipindot ang Back at Next */
 .pager {
+  position: relative;
+  z-index: 50;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
   gap: 16px;
-  body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.stage {
-  order: 1;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.pager {
-  order: 2;
+  padding: 12px 48px;
   margin-top: auto;
+  flex-shrink: 0;
 }
 
-.footer {
-  order: 3;
-}
-  flex-wrap: nowrap;
-  margin-top: auto;
-  padding: 16px 48px;
-}
-.stage {
-  padding-bottom: 24px;
+.pager .btn {
+  cursor: pointer;
+  pointer-events: auto;
 }
 
-.avatar {
-  max-height: 340px;
-  max-width: 300px;
-  overflow: hidden;
-}
 
-.avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top;
-}
-.stage {
-  padding-bottom: 24px;
-}
 
-.avatar {
-  max-height: 340px;
-  max-width: 300px;
-  overflow: hidden;
-}
 
-.avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top;
-}
+
