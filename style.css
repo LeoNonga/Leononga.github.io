@@ -1,3 +1,7 @@
+
+
+
+
 :root {
   --bg: #f8f9fc;
   --text: #111827;
@@ -432,7 +436,11 @@ body {
   object-fit: cover;
   object-position: top center;
 }
-
+  #home .hero-actions {
+  grid-column: 1 !important;
+  max-width: 100% !important;
+  }
+  
 #home h1,
 #home .tagline,
 #home .hero-actions {
