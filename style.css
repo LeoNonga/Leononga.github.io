@@ -439,6 +439,31 @@ body {
   grid-column: 1 !important;
   max-width: 100% !important;
 }
+  .hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.hero-text {
+  flex: 1;
+  text-align: left; /* O gawing right kung gusto mo talagang nasa kanan ang text at buttons */
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
 
 
 
