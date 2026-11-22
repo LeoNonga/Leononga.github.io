@@ -410,9 +410,8 @@ body {
 }
 
 .footer {
-  order: 4;
+  margin-top: auto;
 }
-
 /* Ayusin ang lapit ng text at picture sa Home */
 #home.view.active {
   display: grid !important;
@@ -426,12 +425,12 @@ body {
 }
 
 #home .avatar {
-  grid-column: 2 !important;
-  grid-row: 1 / span 4 !important;
-  justify-self: center !important;
-  max-height: 330px !important;
-  max-width: 280px !important;
-  overflow: hidden !important;
+  #home .avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
 }
 
 #home h1,
