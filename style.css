@@ -467,44 +467,7 @@ body {
   height: auto;
   border-radius: 12px;
 }
-/* Siguraduhing sakop ng page ang buong screen nang maayos */
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 0;
-  overflow-x: hidden; /* Para hindi lumampas o maputol sa gilid */
-}
 
-main.hero {
-  flex: 1;
-  display: flex;
-  align-items: center;
-}
-
-/* Footer bar sa pinakababa */
-.bottom-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 5%;
-  width: 100%;
-  box-sizing: border-box;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.copyright {
-  margin: 0;
-  font-size: 0.9rem;
-  color: #94a3b8;
-}
-
-.stepper {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
 
 
 
