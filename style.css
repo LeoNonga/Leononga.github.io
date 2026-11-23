@@ -367,16 +367,6 @@ h2 {
     text-align: center;
     font-size: 0.75rem;
   }
-.page { display: none; }
-.page.active { display: block; }
-
-.page-nav {
-  display: flex;
-  justify-content: space-between;
-  margin: 2rem 0;
-}
-.page-nav button:disabled { opacity: .4; cursor: not-allowed; }
-
 
 
 
