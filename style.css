@@ -367,7 +367,11 @@ h2 {
     text-align: center;
     font-size: 0.75rem;
   }
-
+.your-next-button-class {
+  position: absolute;
+  right: 20px;
+  z-index: 10;
+}
 
 
 
