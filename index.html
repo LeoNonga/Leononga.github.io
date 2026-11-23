@@ -86,7 +86,82 @@
 
     <!-- FAMILY -->
 
+<section id="family">
+  <h2>My <span class="blue">Family</span></h2>
 
+  <div class="family-grid">
+    <div class="family-card">
+      <h3>Mother</h3>
+      <p>Pangalan ng mama</p>
+    </div>
+
+    <div class="family-card">
+      <h3>Father</h3>
+      <p>Pangalan ng papa</p>
+    </div>
+
+    <div class="family-card">
+      <h3>Eldest sibling</h3>
+      <p>Pangalan ng kapatid 1</p>
+    </div>
+
+    <div class="family-card">
+      <h3>Second sibling</h3>
+      <p>Pangalan ng kapatid 2</p>
+    </div>
+
+    <div class="family-card">
+      <h3>Third sibling</h3>
+      <p>Pangalan ng kapatid 3</p>
+    </div>
+
+    <div class="family-card">
+      <h3>About</h3>
+      <p>I am the youngest of four siblings.</p>
+    </div>
+  </div>
+</section>
+
+Hakbang 2: CSS. Idagdag sa dulo ng CSS file mo (kung nailagay mo na ito dati, huwag nang ulitin):
+
+css
+#family {
+  padding: 40px 60px;
+}
+
+#family h2 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+#family .blue {
+  color: #5b93f5;
+}
+
+.family-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+}
+
+.family-card {
+  background: #1a2133;
+  border: 1px solid #252d40;
+  border-radius: 16px;
+  padding: 24px 28px;
+}
+
+.family-card h3 {
+  color: #5b93f5;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.family-card p {
+  color: #fff;
+  font-size: 1.1rem;
+}
         
   <div class="pager">
     <button class="btn btn-outline" id="backBtn">Back</button>
