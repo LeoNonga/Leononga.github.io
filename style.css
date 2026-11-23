@@ -377,15 +377,7 @@ h2 {
   top: 88%;       /* bigger = lower */
   right: 80px;
 }
-.pager {
-  position: fixed;
-  bottom: 10px;
-  right: 40px;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  z-index: 9999;   
-}
+
 
 
 
