@@ -374,8 +374,4 @@ h2 {
   right: 20px;
   z-index: 10;
 }
-  .pager {
-  position: absolute;
-  top: 88%;       /* bigger = lower */
-  right: 80px;
-}
+ 
