@@ -85,54 +85,26 @@
     </section>
 
   
- <!-- FAMILY -->
-<section id="family">
-  <div class="info-grid">
+    <!-- FAMILY -->
+    <section class="view" id="family">
+      <h2>My <span class="accent">Family</span></h2>
+      <div class="grid grid-4">
+        <div class="card"><h3>Mother</h3><p>Mother's full name</p></div>
+        <div class="card"><h3>Father</h3><p>Father's full name</p></div>
+        <div class="card"><h3>Siblings</h3><p>Sibling names</p></div>
+        <div class="card"><h3>Birth order</h3><p>Youngest (4th of 4)</p></div>
+      </div>
+    </section>
 
-    <div class="info-card">
-      <span class="label">Mother</span>
-      <span class="value">Your mother's full name</span>
-    </div>
+  </main>
 
-    <div class="info-card">
-      <span class="label">Father</span>
-      <span class="value">Your father's full name</span>
-    </div>
-
-    <div class="info-card">
-      <span class="label">Siblings</span>
-      <span class="value">Your siblings' names</span>
-    </div>
-
-    <div class="info-card">
-      <span class="label">Birth Order</span>
-      <span class="value">Youngest (4th of 4)</span>
-    </div>
-
-  </div>
-</section>
-
-
-
-
-    
   <script>
-    // Switch views (page never scrolls)
-    var order = ['home', 'personal', 'achievements', 'family'];
-    var current = 0;
     var links = document.querySelectorAll('.nav-link');
     var views = document.querySelectorAll('.view');
-    var backBtn = document.getElementById('backBtn');
-    var nextBtn = document.getElementById('nextBtn');
-    var pagerCount = document.getElementById('pagerCount');
 
     function showView(id) {
-      current = order.indexOf(id);
       views.forEach(function (v) { v.classList.toggle('active', v.id === id); });
       links.forEach(function (l) { l.classList.toggle('active', l.getAttribute('data-view') === id); });
-      backBtn.disabled = current === 0;
-      nextBtn.disabled = current === order.length - 1;
-      pagerCount.textContent = (current + 1) + ' / ' + order.length;
     }
 
     document.querySelectorAll('[data-view]').forEach(function (el) {
@@ -140,13 +112,6 @@
         e.preventDefault();
         showView(el.getAttribute('data-view'));
       });
-    });
-
-    backBtn.addEventListener('click', function () {
-      if (current > 0) showView(order[current - 1]);
-    });
-    nextBtn.addEventListener('click', function () {
-      if (current < order.length - 1) showView(order[current + 1]);
     });
 
     showView('home');
