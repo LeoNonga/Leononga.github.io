@@ -282,3 +282,11 @@ h2 {
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
 }
+
+.sub-title {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--accent, #2f5fd0);
+  margin: 18px 0 10px;
+}
