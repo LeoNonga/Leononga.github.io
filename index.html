@@ -17,8 +17,8 @@
       <button class="nav-link active" data-view="home">Home</button>
       <button class="nav-link" data-view="personal">Personal Information</button>
       <button class="nav-link" data-view="achievements">Achievements</button>
-      <button class="nav-link" data-view="family">Family</button>
-      <button class="nav-link" data-view="friends">Friends</button>
+    <button class="btn btn-outline" data-view="family">Family &amp; Friends</button>
+    <button class="nav-link" data-view="family">Family &amp; Friends</button>
     </nav>
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
       <svg class="icon-moon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
@@ -85,9 +85,11 @@
       </div>
     </section>
 
-<!-- FAMILY -->
+<!-- FAMILY & FRIENDS -->
 <section class="view" id="family">
-  <h2>My <span class="accent">Family</span></h2>
+  <h2>Family <span class="accent">&amp; Friends</span></h2>
+
+  <h4 class="sub-title">My Family</h4>
   <div class="grid grid-4">
     <div class="card">
       <img class="card-photo" src="mother.jpg" alt="Mother" onerror="this.remove()">
@@ -103,11 +105,8 @@
     </div>
     <div class="card"><h3>Birth order</h3><p>Youngest (4th of 4)</p></div>
   </div>
-</section>
 
-<!-- FRIENDS -->
-<section class="view" id="friends">
-  <h2>My <span class="accent">Friends</span></h2>
+  <h4 class="sub-title">My Friends</h4>
   <div class="grid grid-4">
     <div class="card">
       <img class="card-photo" src="friend1.jpg" alt="Friend 1" onerror="this.remove()">
@@ -127,7 +126,6 @@
     </div>
   </div>
 </section>
-
   </main>
 
   <script>
