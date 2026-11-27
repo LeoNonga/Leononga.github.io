@@ -305,14 +305,10 @@ h2 {
   display:block;
 }
 /* FAMILY PAGE FIX */
-#family {
-  justify-content: safe center;
-  overflow-y: auto;
-}
-#family h2 { margin-bottom: 12px; }
-#family .grid-4 { grid-template-columns: repeat(3, 1fr); }
+/* FAMILY PHOTOS - SHOW FULL PICTURE */
 #family .card-photo {
-  height: clamp(70px, 14vh, 140px);
-  margin-bottom: 8px;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.05);
 }
-#family .card { padding: 14px 18px; }
+#family .grid-4 .card-photo { height: 320px; }
+#family .grid-3 .card-photo { height: 240px; }
