@@ -305,10 +305,13 @@ h2 {
   display:block;
 }
 /* FAMILY PAGE FIX */
-/* FAMILY PHOTOS - SHOW FULL PICTURE */
-#family .card-photo {
+/* FAMILY PHOTOS - FIT TO PICTURE */
+#family .grid .card .card-photo {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 22vh;
+  margin: 0 auto 10px;
   object-fit: contain;
-  background: rgba(255, 255, 255, 0.05);
+  background: none;
 }
-#family .grid-4 .card-photo { height: 320px; }
-#family .grid-3 .card-photo { height: 240px; }
