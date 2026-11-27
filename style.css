@@ -331,5 +331,10 @@ h2 {
     object-fit: cover;
     object-position: top center;
   }
+/* FAMILY PAGE - SHOW TITLE */
+#family {
+  justify-content: flex-start;
+  overflow-y: auto;
+  padding-top: 20px;
 }
 
