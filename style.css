@@ -304,3 +304,15 @@ h2 {
   margin-bottom:10px;
   display:block;
 }
+/* FAMILY PAGE FIX */
+#family {
+  justify-content: safe center;
+  overflow-y: auto;
+}
+#family h2 { margin-bottom: 12px; }
+#family .grid-4 { grid-template-columns: repeat(3, 1fr); }
+#family .card-photo {
+  height: clamp(70px, 14vh, 140px);
+  margin-bottom: 8px;
+}
+#family .card { padding: 14px 18px; }
