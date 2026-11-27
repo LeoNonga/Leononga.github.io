@@ -296,3 +296,11 @@ h2 {
   color: #2f5fd0;
   margin: 18px 0 10px;
 }
+.card-photo{
+  width:100%;
+  height:clamp(120px,22vh,210px);
+  object-fit:cover;
+  border-radius:12px;
+  margin-bottom:10px;
+  display:block;
+}
