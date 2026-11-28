@@ -354,7 +354,7 @@ h2 {
 #family .card-photo {
   width: 100% !important;
   height: 120px !important;
-  object-fit: cover !important;
+ object-fit: contain; !important;
   margin: 0 !important;
 }
 #family .card h3 { font-size: 0.85rem !important; margin-top: 6px !important; }
