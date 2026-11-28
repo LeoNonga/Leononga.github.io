@@ -345,3 +345,16 @@ h2 {
 .card-photo[alt="Brother"] {
   object-position: center 75%;
 }
+  /* Family & Friends: no scrolling */
+#family h2 { margin: 4px 0 !important; }
+#family .sub-title { margin: 8px 0 6px !important; }
+#family .grid-4 { grid-template-columns: repeat(6, 1fr) !important; gap: 10px !important; }
+#family .grid-3 { grid-template-columns: repeat(4, 1fr) !important; gap: 10px !important; }
+#family .card { padding: 10px !important; }
+#family .card-photo {
+  width: 100% !important;
+  height: 120px !important;
+  object-fit: cover !important;
+  margin: 0 !important;
+}
+#family .card h3 { font-size: 0.85rem !important; margin-top: 6px !important; }
